@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281CC77F270BC32400891F5E /* LoadVC + Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC77E270BC32400891F5E /* LoadVC + Configure.swift */; };
+		281CC782270BC50A00891F5E /* LoadPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC781270BC50A00891F5E /* LoadPresenter.swift */; };
+		281CC784270BC5B400891F5E /* LoadDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC783270BC5B400891F5E /* LoadDataModel.swift */; };
+		281CC786270BC66E00891F5E /* LoadVC + ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC785270BC66E00891F5E /* LoadVC + ViewProtocol.swift */; };
+		281CC788270BC75F00891F5E /* LoadVC + Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC787270BC75F00891F5E /* LoadVC + Animations.swift */; };
+		281CC78A270BC7F600891F5E /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC789270BC7F600891F5E /* ModuleBuilder.swift */; };
 		281D271E270BA654009CA26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D271D270BA654009CA26F /* AppDelegate.swift */; };
 		281D2720270BA654009CA26F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D271F270BA654009CA26F /* SceneDelegate.swift */; };
-		281D2722270BA654009CA26F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2721270BA654009CA26F /* ViewController.swift */; };
+		281D2722270BA654009CA26F /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2721270BA654009CA26F /* LoadViewController.swift */; };
 		281D2725270BA654009CA26F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281D2723270BA654009CA26F /* Main.storyboard */; };
 		281D2728270BA654009CA26F /* TestVRGSoft.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 281D2726270BA654009CA26F /* TestVRGSoft.xcdatamodeld */; };
 		281D272A270BA655009CA26F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281D2729270BA655009CA26F /* Assets.xcassets */; };
@@ -17,6 +23,9 @@
 		281D2738270BA655009CA26F /* TestVRGSoftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2737270BA655009CA26F /* TestVRGSoftTests.swift */; };
 		281D2742270BA655009CA26F /* TestVRGSoftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */; };
 		281D2744270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */; };
+		28D9458B270BBB9500E5CFAE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9458A270BBB9500E5CFAE /* Extensions.swift */; };
+		28D9458E270BBBC000E5CFAE /* DBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9458D270BBBC000E5CFAE /* DBConstants.swift */; };
+		28D94590270BBD3B00E5CFAE /* LoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9458F270BBD3B00E5CFAE /* LoadViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		281CC77E270BC32400891F5E /* LoadVC + Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadVC + Configure.swift"; sourceTree = "<group>"; };
+		281CC781270BC50A00891F5E /* LoadPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPresenter.swift; sourceTree = "<group>"; };
+		281CC783270BC5B400891F5E /* LoadDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataModel.swift; sourceTree = "<group>"; };
+		281CC785270BC66E00891F5E /* LoadVC + ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadVC + ViewProtocol.swift"; sourceTree = "<group>"; };
+		281CC787270BC75F00891F5E /* LoadVC + Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadVC + Animations.swift"; sourceTree = "<group>"; };
+		281CC789270BC7F600891F5E /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		281D271A270BA654009CA26F /* TestVRGSoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVRGSoft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		281D271D270BA654009CA26F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		281D271F270BA654009CA26F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		281D2721270BA654009CA26F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		281D2721270BA654009CA26F /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		281D2724270BA654009CA26F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		281D2727270BA654009CA26F /* TestVRGSoft.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestVRGSoft.xcdatamodel; sourceTree = "<group>"; };
 		281D2729270BA655009CA26F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +66,9 @@
 		281D273D270BA655009CA26F /* TestVRGSoftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVRGSoftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITests.swift; sourceTree = "<group>"; };
 		281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28D9458A270BBB9500E5CFAE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		28D9458D270BBBC000E5CFAE /* DBConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConstants.swift; sourceTree = "<group>"; };
+		28D9458F270BBD3B00E5CFAE /* LoadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +96,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281CC77B270BC18200891F5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				281CC783270BC5B400891F5E /* LoadDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		281CC77C270BC19200891F5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				281D2721270BA654009CA26F /* LoadViewController.swift */,
+				281CC77E270BC32400891F5E /* LoadVC + Configure.swift */,
+				281CC785270BC66E00891F5E /* LoadVC + ViewProtocol.swift */,
+				281CC787270BC75F00891F5E /* LoadVC + Animations.swift */,
+				28D9458F270BBD3B00E5CFAE /* LoadViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		281CC77D270BC1A800891F5E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				281CC781270BC50A00891F5E /* LoadPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		281D2711270BA654009CA26F = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +147,12 @@
 		281D271C270BA654009CA26F /* TestVRGSoft */ = {
 			isa = PBXGroup;
 			children = (
-				281D271D270BA654009CA26F /* AppDelegate.swift */,
-				281D271F270BA654009CA26F /* SceneDelegate.swift */,
-				281D2721270BA654009CA26F /* ViewController.swift */,
-				281D2723270BA654009CA26F /* Main.storyboard */,
-				281D2729270BA655009CA26F /* Assets.xcassets */,
-				281D272B270BA655009CA26F /* LaunchScreen.storyboard */,
-				281D272E270BA655009CA26F /* Info.plist */,
-				281D2726270BA654009CA26F /* TestVRGSoft.xcdatamodeld */,
+				281CC789270BC7F600891F5E /* ModuleBuilder.swift */,
+				28D94585270BB9D900E5CFAE /* Application */,
+				28D94589270BBB6900E5CFAE /* Extensions */,
+				28D9458C270BBBA600E5CFAE /* DBConstants */,
+				28D94587270BBA8E00E5CFAE /* Source */,
+				28D94586270BB9EB00E5CFAE /* Resources */,
 			);
 			path = TestVRGSoft;
 			sourceTree = "<group>";
@@ -128,6 +172,61 @@
 				281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */,
 			);
 			path = TestVRGSoftUITests;
+			sourceTree = "<group>";
+		};
+		28D94585270BB9D900E5CFAE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				281D271D270BA654009CA26F /* AppDelegate.swift */,
+				281D271F270BA654009CA26F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		28D94586270BB9EB00E5CFAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				281D2723270BA654009CA26F /* Main.storyboard */,
+				281D2729270BA655009CA26F /* Assets.xcassets */,
+				281D272B270BA655009CA26F /* LaunchScreen.storyboard */,
+				281D272E270BA655009CA26F /* Info.plist */,
+				281D2726270BA654009CA26F /* TestVRGSoft.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28D94587270BBA8E00E5CFAE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				28D94588270BBA9B00E5CFAE /* Load */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		28D94588270BBA9B00E5CFAE /* Load */ = {
+			isa = PBXGroup;
+			children = (
+				281CC77B270BC18200891F5E /* Model */,
+				281CC77C270BC19200891F5E /* View */,
+				281CC77D270BC1A800891F5E /* Presenter */,
+			);
+			path = Load;
+			sourceTree = "<group>";
+		};
+		28D94589270BBB6900E5CFAE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				28D9458A270BBB9500E5CFAE /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		28D9458C270BBBA600E5CFAE /* DBConstants */ = {
+			isa = PBXGroup;
+			children = (
+				28D9458D270BBBC000E5CFAE /* DBConstants.swift */,
+			);
+			path = DBConstants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +335,7 @@
 			files = (
 				281D272D270BA655009CA26F /* LaunchScreen.storyboard in Resources */,
 				281D272A270BA655009CA26F /* Assets.xcassets in Resources */,
+				28D94590270BBD3B00E5CFAE /* LoadViewController.xib in Resources */,
 				281D2725270BA654009CA26F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281D2722270BA654009CA26F /* ViewController.swift in Sources */,
+				28D9458B270BBB9500E5CFAE /* Extensions.swift in Sources */,
+				281D2722270BA654009CA26F /* LoadViewController.swift in Sources */,
+				281CC784270BC5B400891F5E /* LoadDataModel.swift in Sources */,
 				281D271E270BA654009CA26F /* AppDelegate.swift in Sources */,
+				281CC77F270BC32400891F5E /* LoadVC + Configure.swift in Sources */,
+				281CC788270BC75F00891F5E /* LoadVC + Animations.swift in Sources */,
 				281D2720270BA654009CA26F /* SceneDelegate.swift in Sources */,
 				281D2728270BA654009CA26F /* TestVRGSoft.xcdatamodeld in Sources */,
+				281CC782270BC50A00891F5E /* LoadPresenter.swift in Sources */,
+				28D9458E270BBBC000E5CFAE /* DBConstants.swift in Sources */,
+				281CC786270BC66E00891F5E /* LoadVC + ViewProtocol.swift in Sources */,
+				281CC78A270BC7F600891F5E /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestVRGSoft/Info.plist;
+				INFOPLIST_FILE = TestVRGSoft/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,7 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestVRGSoft/Info.plist;
+				INFOPLIST_FILE = TestVRGSoft/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
