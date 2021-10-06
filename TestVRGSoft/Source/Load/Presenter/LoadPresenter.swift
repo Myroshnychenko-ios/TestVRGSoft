@@ -19,8 +19,9 @@ protocol LoadViewPresenterProtocol: AnyObject {
     
     // MARK: - Presenter protocol
     
-    init(view: LoadViewProtocol, loadDataModel: LoadDataModel)
+    init(view: LoadViewProtocol, loadDataModel: LoadDataModel, router: RouterProtocol)
     func startSetup()
+    func finishSetup()
     
 }
 
@@ -32,10 +33,12 @@ class LoadPresenter: LoadViewPresenterProtocol {
     
     let view: LoadViewProtocol
     let loadDataModel: LoadDataModel
+    var router: RouterProtocol?
     
-    required init(view: LoadViewProtocol, loadDataModel: LoadDataModel) {
+    required init(view: LoadViewProtocol, loadDataModel: LoadDataModel, router: RouterProtocol) {
         self.view = view
         self.loadDataModel = loadDataModel
+        self.router = router
     }
     
     func startSetup() {
@@ -43,6 +46,10 @@ class LoadPresenter: LoadViewPresenterProtocol {
         let project = loadDataModel.project
         let background = loadDataModel.background
         self.view.setupView(logo: logo, project: project, background: background)
+    }
+    
+    func finishSetup() {
+        router?.pushFilmViewController()
     }
     
 }

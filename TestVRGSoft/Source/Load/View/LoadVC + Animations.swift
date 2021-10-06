@@ -20,7 +20,7 @@ extension LoadViewController {
         animation.autoreverses = true
         animation.repeatCount = 1
         CATransaction.setCompletionBlock {
-            print("end animation")
+            self.presenter.finishSetup()
         }
         logoImageView.layer.add(animation, forKey: "rotationAnimation")
         CATransaction.commit()

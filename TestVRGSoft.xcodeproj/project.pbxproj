@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		197D6A5853F173C89A998FD6 /* Pods_TestVRGSoft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4117CCFD64DE3DF84285710E /* Pods_TestVRGSoft.framework */; };
 		281CC77F270BC32400891F5E /* LoadVC + Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC77E270BC32400891F5E /* LoadVC + Configure.swift */; };
 		281CC782270BC50A00891F5E /* LoadPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC781270BC50A00891F5E /* LoadPresenter.swift */; };
 		281CC784270BC5B400891F5E /* LoadDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC783270BC5B400891F5E /* LoadDataModel.swift */; };
 		281CC786270BC66E00891F5E /* LoadVC + ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC785270BC66E00891F5E /* LoadVC + ViewProtocol.swift */; };
 		281CC788270BC75F00891F5E /* LoadVC + Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC787270BC75F00891F5E /* LoadVC + Animations.swift */; };
-		281CC78A270BC7F600891F5E /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC789270BC7F600891F5E /* ModuleBuilder.swift */; };
+		281CC78A270BC7F600891F5E /* AssemblyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC789270BC7F600891F5E /* AssemblyModuleBuilder.swift */; };
+		281CC790270BE0C500891F5E /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC78F270BE0C500891F5E /* FilmViewController.swift */; };
+		281CC792270BE0D600891F5E /* FilmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281CC791270BE0D600891F5E /* FilmViewController.xib */; };
+		281CC794270BE30F00891F5E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC793270BE30F00891F5E /* Router.swift */; };
+		281CC797270C273200891F5E /* FilmDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC796270C273200891F5E /* FilmDataModel.swift */; };
+		281CC79A270C2E8D00891F5E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CC799270C2E8D00891F5E /* NetworkService.swift */; };
 		281D271E270BA654009CA26F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D271D270BA654009CA26F /* AppDelegate.swift */; };
 		281D2720270BA654009CA26F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D271F270BA654009CA26F /* SceneDelegate.swift */; };
 		281D2722270BA654009CA26F /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2721270BA654009CA26F /* LoadViewController.swift */; };
@@ -23,9 +29,12 @@
 		281D2738270BA655009CA26F /* TestVRGSoftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2737270BA655009CA26F /* TestVRGSoftTests.swift */; };
 		281D2742270BA655009CA26F /* TestVRGSoftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */; };
 		281D2744270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */; };
+		287CE396270DA347006ACF1A /* FilmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE395270DA347006ACF1A /* FilmPresenter.swift */; };
 		28D9458B270BBB9500E5CFAE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9458A270BBB9500E5CFAE /* Extensions.swift */; };
 		28D9458E270BBBC000E5CFAE /* DBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9458D270BBBC000E5CFAE /* DBConstants.swift */; };
 		28D94590270BBD3B00E5CFAE /* LoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9458F270BBD3B00E5CFAE /* LoadViewController.xib */; };
+		4C6C2DEA11F18335DA33E71E /* Pods_TestVRGSoftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE4DB8D682F03D671D81A04 /* Pods_TestVRGSoftTests.framework */; };
+		A3E43975486292520C23AD03 /* Pods_TestVRGSoft_TestVRGSoftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CAE36B713CBA3B56BB730E /* Pods_TestVRGSoft_TestVRGSoftUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +55,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D1851F1604027CC1841443A /* Pods-TestVRGSoft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVRGSoft.release.xcconfig"; path = "Target Support Files/Pods-TestVRGSoft/Pods-TestVRGSoft.release.xcconfig"; sourceTree = "<group>"; };
 		281CC77E270BC32400891F5E /* LoadVC + Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadVC + Configure.swift"; sourceTree = "<group>"; };
 		281CC781270BC50A00891F5E /* LoadPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPresenter.swift; sourceTree = "<group>"; };
 		281CC783270BC5B400891F5E /* LoadDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataModel.swift; sourceTree = "<group>"; };
 		281CC785270BC66E00891F5E /* LoadVC + ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadVC + ViewProtocol.swift"; sourceTree = "<group>"; };
 		281CC787270BC75F00891F5E /* LoadVC + Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadVC + Animations.swift"; sourceTree = "<group>"; };
-		281CC789270BC7F600891F5E /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		281CC789270BC7F600891F5E /* AssemblyModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyModuleBuilder.swift; sourceTree = "<group>"; };
+		281CC78F270BE0C500891F5E /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
+		281CC791270BE0D600891F5E /* FilmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmViewController.xib; sourceTree = "<group>"; };
+		281CC793270BE30F00891F5E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		281CC796270C273200891F5E /* FilmDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDataModel.swift; sourceTree = "<group>"; };
+		281CC799270C2E8D00891F5E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		281D271A270BA654009CA26F /* TestVRGSoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVRGSoft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		281D271D270BA654009CA26F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		281D271F270BA654009CA26F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,9 +81,18 @@
 		281D273D270BA655009CA26F /* TestVRGSoftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVRGSoftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITests.swift; sourceTree = "<group>"; };
 		281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		287CE395270DA347006ACF1A /* FilmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPresenter.swift; sourceTree = "<group>"; };
 		28D9458A270BBB9500E5CFAE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		28D9458D270BBBC000E5CFAE /* DBConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConstants.swift; sourceTree = "<group>"; };
 		28D9458F270BBD3B00E5CFAE /* LoadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadViewController.xib; sourceTree = "<group>"; };
+		395C81A0FCEE226F21CD778E /* Pods-TestVRGSoft-TestVRGSoftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVRGSoft-TestVRGSoftUITests.release.xcconfig"; path = "Target Support Files/Pods-TestVRGSoft-TestVRGSoftUITests/Pods-TestVRGSoft-TestVRGSoftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4117CCFD64DE3DF84285710E /* Pods_TestVRGSoft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestVRGSoft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55CAE36B713CBA3B56BB730E /* Pods_TestVRGSoft_TestVRGSoftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestVRGSoft_TestVRGSoftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE4DB8D682F03D671D81A04 /* Pods_TestVRGSoftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestVRGSoftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE271905048DB7BF63C8472 /* Pods-TestVRGSoftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVRGSoftTests.debug.xcconfig"; path = "Target Support Files/Pods-TestVRGSoftTests/Pods-TestVRGSoftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9083ABC529172152DD73676E /* Pods-TestVRGSoft-TestVRGSoftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVRGSoft-TestVRGSoftUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestVRGSoft-TestVRGSoftUITests/Pods-TestVRGSoft-TestVRGSoftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9586FE5640027C675E844BD5 /* Pods-TestVRGSoftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVRGSoftTests.release.xcconfig"; path = "Target Support Files/Pods-TestVRGSoftTests/Pods-TestVRGSoftTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2A295B5E409640C2E4B03C6 /* Pods-TestVRGSoft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVRGSoft.debug.xcconfig"; path = "Target Support Files/Pods-TestVRGSoft/Pods-TestVRGSoft.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				197D6A5853F173C89A998FD6 /* Pods_TestVRGSoft.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6C2DEA11F18335DA33E71E /* Pods_TestVRGSoftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +116,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E43975486292520C23AD03 /* Pods_TestVRGSoft_TestVRGSoftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		265F5C0D8938BCF8DFFBB546 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2A295B5E409640C2E4B03C6 /* Pods-TestVRGSoft.debug.xcconfig */,
+				0D1851F1604027CC1841443A /* Pods-TestVRGSoft.release.xcconfig */,
+				9083ABC529172152DD73676E /* Pods-TestVRGSoft-TestVRGSoftUITests.debug.xcconfig */,
+				395C81A0FCEE226F21CD778E /* Pods-TestVRGSoft-TestVRGSoftUITests.release.xcconfig */,
+				6FE271905048DB7BF63C8472 /* Pods-TestVRGSoftTests.debug.xcconfig */,
+				9586FE5640027C675E844BD5 /* Pods-TestVRGSoftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		281CC77B270BC18200891F5E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +164,57 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		281CC78B270BDC9E00891F5E /* Films */ = {
+			isa = PBXGroup;
+			children = (
+				281CC78C270BE08F00891F5E /* Model */,
+				281CC78D270BE09600891F5E /* View */,
+				281CC78E270BE09D00891F5E /* Presenter */,
+			);
+			path = Films;
+			sourceTree = "<group>";
+		};
+		281CC78C270BE08F00891F5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				281CC796270C273200891F5E /* FilmDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		281CC78D270BE09600891F5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				281CC78F270BE0C500891F5E /* FilmViewController.swift */,
+				281CC791270BE0D600891F5E /* FilmViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		281CC78E270BE09D00891F5E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				287CE395270DA347006ACF1A /* FilmPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		281CC79B270C2FF400891F5E /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				281CC79C270C300800891F5E /* NetworkService */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		281CC79C270C300800891F5E /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				281CC799270C2E8D00891F5E /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		281D2711270BA654009CA26F = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +222,8 @@
 				281D2736270BA655009CA26F /* TestVRGSoftTests */,
 				281D2740270BA655009CA26F /* TestVRGSoftUITests */,
 				281D271B270BA654009CA26F /* Products */,
+				265F5C0D8938BCF8DFFBB546 /* Pods */,
+				CED3C16CF99FADD31A7E2CCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,11 +240,13 @@
 		281D271C270BA654009CA26F /* TestVRGSoft */ = {
 			isa = PBXGroup;
 			children = (
-				281CC789270BC7F600891F5E /* ModuleBuilder.swift */,
+				281CC793270BE30F00891F5E /* Router.swift */,
+				281CC789270BC7F600891F5E /* AssemblyModuleBuilder.swift */,
 				28D94585270BB9D900E5CFAE /* Application */,
 				28D94589270BBB6900E5CFAE /* Extensions */,
 				28D9458C270BBBA600E5CFAE /* DBConstants */,
 				28D94587270BBA8E00E5CFAE /* Source */,
+				281CC79B270C2FF400891F5E /* ServiceLayer */,
 				28D94586270BB9EB00E5CFAE /* Resources */,
 			);
 			path = TestVRGSoft;
@@ -199,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				28D94588270BBA9B00E5CFAE /* Load */,
+				281CC78B270BDC9E00891F5E /* Films */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -229,6 +325,16 @@
 			path = DBConstants;
 			sourceTree = "<group>";
 		};
+		CED3C16CF99FADD31A7E2CCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4117CCFD64DE3DF84285710E /* Pods_TestVRGSoft.framework */,
+				55CAE36B713CBA3B56BB730E /* Pods_TestVRGSoft_TestVRGSoftUITests.framework */,
+				5FE4DB8D682F03D671D81A04 /* Pods_TestVRGSoftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,9 +342,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 281D2747270BA655009CA26F /* Build configuration list for PBXNativeTarget "TestVRGSoft" */;
 			buildPhases = (
+				CAC7D5E5A8C0AA854E081FB2 /* [CP] Check Pods Manifest.lock */,
 				281D2716270BA654009CA26F /* Sources */,
 				281D2717270BA654009CA26F /* Frameworks */,
 				281D2718270BA654009CA26F /* Resources */,
+				AC5359F2D55A85B39D44A164 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +361,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 281D274A270BA655009CA26F /* Build configuration list for PBXNativeTarget "TestVRGSoftTests" */;
 			buildPhases = (
+				5B916BFBB8598F794CFCF435 /* [CP] Check Pods Manifest.lock */,
 				281D272F270BA655009CA26F /* Sources */,
 				281D2730270BA655009CA26F /* Frameworks */,
 				281D2731270BA655009CA26F /* Resources */,
@@ -271,9 +380,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 281D274D270BA655009CA26F /* Build configuration list for PBXNativeTarget "TestVRGSoftUITests" */;
 			buildPhases = (
+				A4A965FE44C151FEA1D50FAE /* [CP] Check Pods Manifest.lock */,
 				281D2739270BA655009CA26F /* Sources */,
 				281D273A270BA655009CA26F /* Frameworks */,
 				281D273B270BA655009CA26F /* Resources */,
+				1F9D931E25032C7F583377DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281CC792270BE0D600891F5E /* FilmViewController.xib in Resources */,
 				281D272D270BA655009CA26F /* LaunchScreen.storyboard in Resources */,
 				281D272A270BA655009CA26F /* Assets.xcassets in Resources */,
 				28D94590270BBD3B00E5CFAE /* LoadViewController.xib in Resources */,
@@ -356,6 +468,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F9D931E25032C7F583377DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestVRGSoft-TestVRGSoftUITests/Pods-TestVRGSoft-TestVRGSoftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestVRGSoft-TestVRGSoftUITests/Pods-TestVRGSoft-TestVRGSoftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestVRGSoft-TestVRGSoftUITests/Pods-TestVRGSoft-TestVRGSoftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B916BFBB8598F794CFCF435 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestVRGSoftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A965FE44C151FEA1D50FAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestVRGSoft-TestVRGSoftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC5359F2D55A85B39D44A164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestVRGSoft/Pods-TestVRGSoft-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestVRGSoft/Pods-TestVRGSoft-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestVRGSoft/Pods-TestVRGSoft-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAC7D5E5A8C0AA854E081FB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestVRGSoft-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		281D2716270BA654009CA26F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -364,15 +579,20 @@
 				28D9458B270BBB9500E5CFAE /* Extensions.swift in Sources */,
 				281D2722270BA654009CA26F /* LoadViewController.swift in Sources */,
 				281CC784270BC5B400891F5E /* LoadDataModel.swift in Sources */,
+				287CE396270DA347006ACF1A /* FilmPresenter.swift in Sources */,
 				281D271E270BA654009CA26F /* AppDelegate.swift in Sources */,
 				281CC77F270BC32400891F5E /* LoadVC + Configure.swift in Sources */,
 				281CC788270BC75F00891F5E /* LoadVC + Animations.swift in Sources */,
 				281D2720270BA654009CA26F /* SceneDelegate.swift in Sources */,
 				281D2728270BA654009CA26F /* TestVRGSoft.xcdatamodeld in Sources */,
+				281CC790270BE0C500891F5E /* FilmViewController.swift in Sources */,
 				281CC782270BC50A00891F5E /* LoadPresenter.swift in Sources */,
+				281CC79A270C2E8D00891F5E /* NetworkService.swift in Sources */,
+				281CC794270BE30F00891F5E /* Router.swift in Sources */,
+				281CC797270C273200891F5E /* FilmDataModel.swift in Sources */,
 				28D9458E270BBBC000E5CFAE /* DBConstants.swift in Sources */,
 				281CC786270BC66E00891F5E /* LoadVC + ViewProtocol.swift in Sources */,
-				281CC78A270BC7F600891F5E /* ModuleBuilder.swift in Sources */,
+				281CC78A270BC7F600891F5E /* AssemblyModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +766,7 @@
 		};
 		281D2748270BA655009CA26F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A295B5E409640C2E4B03C6 /* Pods-TestVRGSoft.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -573,6 +794,7 @@
 		};
 		281D2749270BA655009CA26F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1851F1604027CC1841443A /* Pods-TestVRGSoft.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -600,6 +822,7 @@
 		};
 		281D274B270BA655009CA26F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FE271905048DB7BF63C8472 /* Pods-TestVRGSoftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -624,6 +847,7 @@
 		};
 		281D274C270BA655009CA26F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9586FE5640027C675E844BD5 /* Pods-TestVRGSoftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -648,6 +872,7 @@
 		};
 		281D274E270BA655009CA26F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9083ABC529172152DD73676E /* Pods-TestVRGSoft-TestVRGSoftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -670,6 +895,7 @@
 		};
 		281D274F270BA655009CA26F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395C81A0FCEE226F21CD778E /* Pods-TestVRGSoft-TestVRGSoftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

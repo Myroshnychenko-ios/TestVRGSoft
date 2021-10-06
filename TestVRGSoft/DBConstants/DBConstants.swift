@@ -17,6 +17,11 @@ class DBConstants {
     static let rVGProject: String = "T E S T R V G S"
     static let rVGBackground: String = "im_background"
     
+    // MARK: - API configure
+    
+    static let nYTimesURL = "https://api.nytimes.com/svc/movies/v2/reviews/search.json"
+    static let nYTimesKey = "AJgAEnjdIGwquSJ5tI80lizmj2dimaE3"
+    
 }
 
 // MARK: - DBConstants UIColors
