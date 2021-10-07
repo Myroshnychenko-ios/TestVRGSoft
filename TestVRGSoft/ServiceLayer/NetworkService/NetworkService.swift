@@ -52,7 +52,6 @@ class NetworkService: NetworkServiceProtocol {
             guard let data = response.data else { return }
             do {
                 let films = try JSONDecoder().decode(Films.self, from: data)
-                print(films)
                 completion(.success(films))
             } catch {
                 completion(.failure(error))

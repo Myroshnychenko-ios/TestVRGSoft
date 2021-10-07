@@ -19,7 +19,8 @@ extension FilmViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: FilmTableViewCell.identifier, for: indexPath) as! FilmTableViewCell
         let film = presenter.films?.films?[indexPath.row]
         let networkService = NetworkService(dateWith: nil, dateOn: nil)
-        cell.initialization(film: film, networkService: networkService, coreDataService: nil)
+        let coreDataService = CoreDataService()
+        cell.initialization(film: film, networkService: networkService, coreDataService: coreDataService)
         return cell
     }
     

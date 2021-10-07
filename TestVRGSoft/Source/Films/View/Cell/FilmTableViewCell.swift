@@ -21,6 +21,7 @@ class FilmTableViewCell: UITableViewCell {
     @IBOutlet weak var switchButton: UIButton!
     var film: Film?
     weak var networkService: NetworkService!
+    var coreDataService: CoreDataService!
     var switchSelected: Bool = false
     
     // MARK: - Lifecycle
@@ -36,28 +37,59 @@ class FilmTableViewCell: UITableViewCell {
     @IBAction func switchValueDidChange(_ sender: Any) {
         switchSelected = !switchSelected
         if switchSelected {
-            switchButton.setImage(UIImage(named: "ic_favorites_on"), for: .normal)
-            film?.isFavorites = true
+            guard let dataFilm = film else { return }
+            self.coreDataService.saveFilm(film: dataFilm, completion: { [weak self] result in
+                guard self != nil else {return}
+                switch result {
+                case .success(let saved):
+                    self?.switchButton.setImage(UIImage(named: "ic_favorites_on"), for: .normal)
+                    self?.film?.isFavorites = saved
+                case .failure(let error):
+                    self?.switchButton.setImage(UIImage(named: "ic_favorites_off"), for: .normal)
+                    self?.film?.isFavorites = false
+                    print(error.localizedDescription)
+                }
+            })
         } else {
-            switchButton.setImage(UIImage(named: "ic_favorites_off"), for: .normal)
-            film?.isFavorites = false
-        }    }
+            guard let dataFilm = film else { return }
+            self.coreDataService.deleteFilm(film: dataFilm, completion: { [weak self] result in
+                guard self != nil else { return }
+                switch result {
+                case .success(let deleted):
+                    self?.switchButton.setImage(UIImage(named: "ic_favorites_off"), for: .normal)
+                    self?.film?.isFavorites = !deleted
+                case .failure(let error):
+                    self?.switchButton.setImage(UIImage(named: "ic_favorites_on"), for: .normal)
+                    self?.film?.isFavorites = true
+                    print(error.localizedDescription)
+                }
+            })
+        }
+    }
     
     // MARK: - Helpers
     
-    func initialization(film: Film?, networkService: NetworkService, coreDataService: String?) {
+    func initialization(film: Film?, networkService: NetworkService, coreDataService: CoreDataService) {
         self.film = film
         self.networkService = networkService
+        self.coreDataService = coreDataService
         guard let dataFilm = self.film else {
             displayTitleLabel.text = "Error loading data"
             self.multimediaImageView.image = UIImage(named: "im_rerror_loading_data")
             return
         }
-        if dataFilm.isFavorites {
-            switchButton.setImage(UIImage(named: "ic_favorites_on"), for: .normal)
-        } else {
-            switchButton.setImage(UIImage(named: "ic_favorites_off"), for: .normal)
-        }
+        self.coreDataService.isSavedFilm(film: dataFilm, completion: { result in
+            switch result {
+            case true:
+                self.switchButton.setImage(UIImage(named: "ic_favorites_on"), for: .normal)
+                self.film?.isFavorites = true
+                self.switchSelected = true
+            case false:
+                self.switchButton.setImage(UIImage(named: "ic_favorites_off"), for: .normal)
+                self.film?.isFavorites = false
+                self.switchSelected = false
+            }
+        })
         displayTitleLabel.text = dataFilm.displayTitle
         guard let multimedia = dataFilm.multimedia else {
             self.multimediaImageView.image = UIImage(named: "im_rerror_loading_data")

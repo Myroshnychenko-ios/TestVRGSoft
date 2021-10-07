@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDFilm" representedClassName="CDFilm" syncable="YES" codeGenerationType="class">
+        <attribute name="byline" optional="YES" attributeType="String"/>
+        <attribute name="criticsPick" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="displayTitle" optional="YES" attributeType="String"/>
+        <attribute name="headline" optional="YES" attributeType="String"/>
+        <attribute name="openingDate" optional="YES" attributeType="String"/>
+        <attribute name="src" optional="YES" attributeType="String"/>
+        <attribute name="summaryShort" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CDFilm" positionX="-36" positionY="9" width="128" height="134"/>
+    </elements>
 </model>

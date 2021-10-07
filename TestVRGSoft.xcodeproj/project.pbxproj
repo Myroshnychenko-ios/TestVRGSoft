@@ -29,6 +29,7 @@
 		281D2738270BA655009CA26F /* TestVRGSoftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2737270BA655009CA26F /* TestVRGSoftTests.swift */; };
 		281D2742270BA655009CA26F /* TestVRGSoftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */; };
 		281D2744270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */; };
+		2865AB88270ECA30001C4221 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865AB87270ECA30001C4221 /* CoreDataService.swift */; };
 		287CE396270DA347006ACF1A /* FilmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE395270DA347006ACF1A /* FilmPresenter.swift */; };
 		287CE398270E59A0006ACF1A /* FilmVC + ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE397270E59A0006ACF1A /* FilmVC + ViewProtocol.swift */; };
 		287CE39A270E5A36006ACF1A /* FilmVC + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE399270E5A36006ACF1A /* FilmVC + TableView.swift */; };
@@ -87,6 +88,7 @@
 		281D273D270BA655009CA26F /* TestVRGSoftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVRGSoftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITests.swift; sourceTree = "<group>"; };
 		281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2865AB87270ECA30001C4221 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		287CE395270DA347006ACF1A /* FilmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPresenter.swift; sourceTree = "<group>"; };
 		287CE397270E59A0006ACF1A /* FilmVC + ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmVC + ViewProtocol.swift"; sourceTree = "<group>"; };
 		287CE399270E5A36006ACF1A /* FilmVC + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmVC + TableView.swift"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				281CC79C270C300800891F5E /* NetworkService */,
+				2865AB86270ECA0F001C4221 /* CoreDataService */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -283,6 +286,14 @@
 				281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */,
 			);
 			path = TestVRGSoftUITests;
+			sourceTree = "<group>";
+		};
+		2865AB86270ECA0F001C4221 /* CoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				2865AB87270ECA30001C4221 /* CoreDataService.swift */,
+			);
+			path = CoreDataService;
 			sourceTree = "<group>";
 		};
 		287CE39D270E5E78006ACF1A /* Cell */ = {
@@ -624,6 +635,7 @@
 				28D9458E270BBBC000E5CFAE /* DBConstants.swift in Sources */,
 				287CE39A270E5A36006ACF1A /* FilmVC + TableView.swift in Sources */,
 				281CC786270BC66E00891F5E /* LoadVC + ViewProtocol.swift in Sources */,
+				2865AB88270ECA30001C4221 /* CoreDataService.swift in Sources */,
 				281CC78A270BC7F600891F5E /* AssemblyModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
