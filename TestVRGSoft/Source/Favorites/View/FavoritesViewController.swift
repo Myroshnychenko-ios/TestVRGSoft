@@ -1,22 +1,22 @@
 //
-//  FilmsViewController.swift
+//  FavoritesViewController.swift
 //  TestVRGSoft
 //
-//  Created by Максим Мирошниченко on 05.10.2021.
+//  Created by Максим Мирошниченко on 07.10.2021.
 //
 
 import UIKit
 
-protocol FilmTableViewCellProtocol {
+protocol FavoritesTableViewCellProtocol {
     func updateTableView()
 }
 
-class FilmViewController: UIViewController {
+class FavoritesViewController: UIViewController {
     
     // MARK: - Variables
     
-    var presenter: FilmViewPresenterProtocol!
-    
+    var presenter: FavoritesViewPresenterProtocol!
+
     // MARK: - IBOutlets
 
     @IBOutlet weak var backgroundImageView: UIImageView!
@@ -26,12 +26,12 @@ class FilmViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureFilmView()
+        configureFavoritesView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter.startRequestFilms()
+        presenter.fetchFilms()
         tableView.reloadData()
     }
     

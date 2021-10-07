@@ -1,13 +1,13 @@
 //
-//  FilmPresenter.swift
+//  FavoritesPresenter.swift
 //  TestVRGSoft
 //
-//  Created by Максим Мирошниченко on 06.10.2021.
+//  Created by Максим Мирошниченко on 07.10.2021.
 //
 
 import Foundation
 
-protocol FilmViewProtocol: AnyObject {
+protocol FavoritesViewProtocol: AnyObject {
     
     // MARK: - View protocol
     
@@ -16,35 +16,35 @@ protocol FilmViewProtocol: AnyObject {
     
 }
 
-protocol FilmViewPresenterProtocol: AnyObject {
+protocol FavoritesViewPresenterProtocol: AnyObject {
     
     // MARK: - Presenter protocol
     
-    init(view: FilmViewProtocol, networkService: NetworkService)
-    func startRequestFilms()
-    var films: Films? { get set }
+    init(view: FavoritesViewProtocol, coreDataService: CoreDataService)
+    func fetchFilms()
+    var films: [CDFilm]? { get set }
     
 }
 
-class FilmPresenter: FilmViewPresenterProtocol {
+class FavoritesPresenter: FavoritesViewPresenterProtocol {
     
     // MARK: - Variables
     
-    weak var view: FilmViewProtocol?
-    let networkService: NetworkService!
-    var films: Films?
+    weak var view: FavoritesViewProtocol?
+    let coreDataService: CoreDataService!
+    var films: [CDFilm]?
     
     // MARK: - Lifecycle
     
-    required init(view: FilmViewProtocol, networkService: NetworkService) {
+    required init(view: FavoritesViewProtocol, coreDataService: CoreDataService) {
         self.view = view
-        self.networkService = networkService
+        self.coreDataService = coreDataService
     }
     
     // MARK: - Protocol methods
     
-    func startRequestFilms() {
-        networkService.requestFilms(completion: { [weak self] result in
+    func fetchFilms() {
+        coreDataService.fetch(completion: { [weak self] result in
             guard self != nil else { return }
             DispatchQueue.main.async {
                 switch result {

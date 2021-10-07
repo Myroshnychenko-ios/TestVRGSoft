@@ -30,6 +30,15 @@
 		281D2742270BA655009CA26F /* TestVRGSoftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */; };
 		281D2744270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */; };
 		2865AB88270ECA30001C4221 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865AB87270ECA30001C4221 /* CoreDataService.swift */; };
+		2865AB93270EEF5F001C4221 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865AB92270EEF5F001C4221 /* FavoritesViewController.swift */; };
+		2865AB95270EEF6B001C4221 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2865AB94270EEF6B001C4221 /* FavoritesViewController.xib */; };
+		2865AB97270EEFAA001C4221 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865AB96270EEFAA001C4221 /* FavoritesPresenter.swift */; };
+		2865AB99270EF65B001C4221 /* FavoritesVC + ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865AB98270EF65B001C4221 /* FavoritesVC + ViewProtocol.swift */; };
+		2865AB9B270EF973001C4221 /* FavoritesVC + Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865AB9A270EF973001C4221 /* FavoritesVC + Configure.swift */; };
+		2865AB9D270EF988001C4221 /* FavoritesVC + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865AB9C270EF988001C4221 /* FavoritesVC + TableView.swift */; };
+		2865ABA1270EFB1B001C4221 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865AB9F270EFB1B001C4221 /* FavoritesTableViewCell.swift */; };
+		2865ABA2270EFB1B001C4221 /* FavoritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2865ABA0270EFB1B001C4221 /* FavoritesTableViewCell.xib */; };
+		2865ABA4270EFB36001C4221 /* FavoritesTVCell + Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2865ABA3270EFB36001C4221 /* FavoritesTVCell + Configure.swift */; };
 		287CE396270DA347006ACF1A /* FilmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE395270DA347006ACF1A /* FilmPresenter.swift */; };
 		287CE398270E59A0006ACF1A /* FilmVC + ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE397270E59A0006ACF1A /* FilmVC + ViewProtocol.swift */; };
 		287CE39A270E5A36006ACF1A /* FilmVC + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE399270E5A36006ACF1A /* FilmVC + TableView.swift */; };
@@ -89,6 +98,15 @@
 		281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITests.swift; sourceTree = "<group>"; };
 		281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2865AB87270ECA30001C4221 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		2865AB92270EEF5F001C4221 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		2865AB94270EEF6B001C4221 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		2865AB96270EEFAA001C4221 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		2865AB98270EF65B001C4221 /* FavoritesVC + ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesVC + ViewProtocol.swift"; sourceTree = "<group>"; };
+		2865AB9A270EF973001C4221 /* FavoritesVC + Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesVC + Configure.swift"; sourceTree = "<group>"; };
+		2865AB9C270EF988001C4221 /* FavoritesVC + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesVC + TableView.swift"; sourceTree = "<group>"; };
+		2865AB9F270EFB1B001C4221 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		2865ABA0270EFB1B001C4221 /* FavoritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTableViewCell.xib; sourceTree = "<group>"; };
+		2865ABA3270EFB36001C4221 /* FavoritesTVCell + Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritesTVCell + Configure.swift"; sourceTree = "<group>"; };
 		287CE395270DA347006ACF1A /* FilmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPresenter.swift; sourceTree = "<group>"; };
 		287CE397270E59A0006ACF1A /* FilmVC + ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmVC + ViewProtocol.swift"; sourceTree = "<group>"; };
 		287CE399270E5A36006ACF1A /* FilmVC + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmVC + TableView.swift"; sourceTree = "<group>"; };
@@ -296,6 +314,46 @@
 			path = CoreDataService;
 			sourceTree = "<group>";
 		};
+		2865AB8C270EEE3B001C4221 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				2865AB8E270EEE50001C4221 /* View */,
+				2865AB8F270EEE59001C4221 /* Presenter */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		2865AB8E270EEE50001C4221 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2865AB9E270EFAF8001C4221 /* Cell */,
+				2865AB92270EEF5F001C4221 /* FavoritesViewController.swift */,
+				2865AB9A270EF973001C4221 /* FavoritesVC + Configure.swift */,
+				2865AB9C270EF988001C4221 /* FavoritesVC + TableView.swift */,
+				2865AB98270EF65B001C4221 /* FavoritesVC + ViewProtocol.swift */,
+				2865AB94270EEF6B001C4221 /* FavoritesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2865AB8F270EEE59001C4221 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2865AB96270EEFAA001C4221 /* FavoritesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2865AB9E270EFAF8001C4221 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2865AB9F270EFB1B001C4221 /* FavoritesTableViewCell.swift */,
+				2865ABA3270EFB36001C4221 /* FavoritesTVCell + Configure.swift */,
+				2865ABA0270EFB1B001C4221 /* FavoritesTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		287CE39D270E5E78006ACF1A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +390,7 @@
 			children = (
 				28D94588270BBA9B00E5CFAE /* Load */,
 				281CC78B270BDC9E00891F5E /* Films */,
+				2865AB8C270EEE3B001C4221 /* Favorites */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -482,9 +541,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				281CC792270BE0D600891F5E /* FilmViewController.xib in Resources */,
+				2865ABA2270EFB1B001C4221 /* FavoritesTableViewCell.xib in Resources */,
 				287CE3A5270E6422006ACF1A /* FilmTableViewCell.xib in Resources */,
 				281D272D270BA655009CA26F /* LaunchScreen.storyboard in Resources */,
 				281D272A270BA655009CA26F /* Assets.xcassets in Resources */,
+				2865AB95270EEF6B001C4221 /* FavoritesViewController.xib in Resources */,
 				28D94590270BBD3B00E5CFAE /* LoadViewController.xib in Resources */,
 				281D2725270BA654009CA26F /* Main.storyboard in Resources */,
 			);
@@ -614,20 +675,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2865AB99270EF65B001C4221 /* FavoritesVC + ViewProtocol.swift in Sources */,
 				287CE3A4270E6422006ACF1A /* FilmTableViewCell.swift in Sources */,
+				2865AB9D270EF988001C4221 /* FavoritesVC + TableView.swift in Sources */,
 				28D9458B270BBB9500E5CFAE /* Extensions.swift in Sources */,
+				2865AB97270EEFAA001C4221 /* FavoritesPresenter.swift in Sources */,
 				281D2722270BA654009CA26F /* LoadViewController.swift in Sources */,
 				281CC784270BC5B400891F5E /* LoadDataModel.swift in Sources */,
 				287CE396270DA347006ACF1A /* FilmPresenter.swift in Sources */,
+				2865ABA4270EFB36001C4221 /* FavoritesTVCell + Configure.swift in Sources */,
 				281D271E270BA654009CA26F /* AppDelegate.swift in Sources */,
 				281CC77F270BC32400891F5E /* LoadVC + Configure.swift in Sources */,
 				281CC788270BC75F00891F5E /* LoadVC + Animations.swift in Sources */,
+				2865AB93270EEF5F001C4221 /* FavoritesViewController.swift in Sources */,
 				281D2720270BA654009CA26F /* SceneDelegate.swift in Sources */,
 				281D2728270BA654009CA26F /* TestVRGSoft.xcdatamodeld in Sources */,
 				281CC790270BE0C500891F5E /* FilmViewController.swift in Sources */,
 				281CC782270BC50A00891F5E /* LoadPresenter.swift in Sources */,
+				2865AB9B270EF973001C4221 /* FavoritesVC + Configure.swift in Sources */,
 				287CE3A7270E6822006ACF1A /* FilmTVCell + Configure.swift in Sources */,
 				281CC79A270C2E8D00891F5E /* NetworkService.swift in Sources */,
+				2865ABA1270EFB1B001C4221 /* FavoritesTableViewCell.swift in Sources */,
 				281CC794270BE30F00891F5E /* Router.swift in Sources */,
 				287CE39C270E5C92006ACF1A /* FilmVC + Configure.swift in Sources */,
 				287CE398270E59A0006ACF1A /* FilmVC + ViewProtocol.swift in Sources */,

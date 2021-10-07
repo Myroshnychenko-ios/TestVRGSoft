@@ -6,3 +6,11 @@
 //
 
 import UIKit
+
+extension UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didReloadData indexPath: IndexPath) {
+        tableView.reloadData()
+    }
+    
+}

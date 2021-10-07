@@ -13,9 +13,10 @@ protocol CoreDataServiceProtocol {
     
     // MARK: - CoreData service protocol
     
-    func saveFilm(film: Film, completion: @escaping (Result<Bool, Error>) -> Void)
-    func deleteFilm(film: Film, completion: @escaping (Result<Bool, Error>) -> Void)
-    func isSavedFilm(film: Film, completion: @escaping (Bool) -> Void)
+    func save(film: Film, completion: @escaping (Result<Bool, Error>) -> Void)
+    func delete(film: Film, completion: @escaping (Result<Bool, Error>) -> Void)
+    func found(film: Film, completion: @escaping (Bool) -> Void)
+    func fetch(completion: @escaping (Result<[CDFilm], Error>) -> Void)
     
 }
 
@@ -23,7 +24,7 @@ class CoreDataService: CoreDataServiceProtocol {
     
     // MARK: - Protocol methods
     
-    func saveFilm(film: Film, completion: @escaping (Result<Bool, Error>) -> Void) {
+    func save(film: Film, completion: @escaping (Result<Bool, Error>) -> Void) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         guard let entity = NSEntityDescription.entity(forEntityName: "CDFilm", in: context) else { return }
@@ -42,7 +43,7 @@ class CoreDataService: CoreDataServiceProtocol {
         }
     }
     
-    func deleteFilm(film: Film, completion: @escaping (Result<Bool, Error>) -> Void) {
+    func delete(film: Film, completion: @escaping (Result<Bool, Error>) -> Void) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<CDFilm> = CDFilm.fetchRequest()
@@ -62,7 +63,7 @@ class CoreDataService: CoreDataServiceProtocol {
         }
     }
     
-    func isSavedFilm(film: Film, completion: @escaping (Bool) -> Void) {
+    func found(film: Film, completion: @escaping (Bool) -> Void) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<CDFilm> = CDFilm.fetchRequest()
@@ -73,6 +74,18 @@ class CoreDataService: CoreDataServiceProtocol {
             completion(true)
         } else {
             completion(false)
+        }
+    }
+    
+    func fetch(completion: @escaping (Result<[CDFilm], Error>) -> Void) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<CDFilm> = CDFilm.fetchRequest()
+        do {
+            let films = try context.fetch(fetchRequest)
+            completion(.success(films))
+        } catch {
+            completion(.failure(error))
         }
     }
     

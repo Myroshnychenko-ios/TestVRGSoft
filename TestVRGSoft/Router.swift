@@ -37,10 +37,13 @@ class Router: RouterProtocol {
     func pushFilmViewController() {
         if let navigationController = navigationController {
             guard let filmViewController = assemblyBuilder?.createFilmModule(router: self) else { return }
+            guard let favoritesViewController = assemblyBuilder?.createFavoritesModule(router: self) else { return }
             let tabBarController = UITabBarController()
             filmViewController.title = "New films"
             filmViewController.tabBarItem.image = UIImage(named: "ic_watch_tv")
-            tabBarController.setViewControllers([filmViewController], animated: false)
+            favoritesViewController.title = "Favorites"
+            favoritesViewController.tabBarItem.image = UIImage(named: "ic_favorites")
+            tabBarController.setViewControllers([filmViewController, favoritesViewController], animated: false)
             tabBarController.modalPresentationStyle = .fullScreen
             tabBarController.tabBar.backgroundColor = .rVGGreen
             tabBarController.tabBar.tintColor = .rVGBlue
