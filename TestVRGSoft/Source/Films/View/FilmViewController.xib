@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilmViewController" customModule="TestVRGSoft" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundImageView" destination="kKr-7K-1Ox" id="F8F-cM-SWF"/>
                 <outlet property="tableView" destination="f19-X8-Xcm" id="7SB-ex-vWm"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ebh-QQ-niR"/>
             </connections>

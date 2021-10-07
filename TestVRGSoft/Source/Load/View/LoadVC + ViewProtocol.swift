@@ -9,7 +9,7 @@ import UIKit
 
 extension LoadViewController: LoadViewProtocol {
     
-    // MARK: - LoadingViewProtocol
+    // MARK: - LoadViewProtocol
     
     func setupView(logo: String, project: String, background: String) {
         configureLoadView()

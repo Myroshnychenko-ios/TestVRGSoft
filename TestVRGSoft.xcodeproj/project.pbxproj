@@ -30,6 +30,12 @@
 		281D2742270BA655009CA26F /* TestVRGSoftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */; };
 		281D2744270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */; };
 		287CE396270DA347006ACF1A /* FilmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE395270DA347006ACF1A /* FilmPresenter.swift */; };
+		287CE398270E59A0006ACF1A /* FilmVC + ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE397270E59A0006ACF1A /* FilmVC + ViewProtocol.swift */; };
+		287CE39A270E5A36006ACF1A /* FilmVC + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE399270E5A36006ACF1A /* FilmVC + TableView.swift */; };
+		287CE39C270E5C92006ACF1A /* FilmVC + Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE39B270E5C92006ACF1A /* FilmVC + Configure.swift */; };
+		287CE3A4270E6422006ACF1A /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE3A2270E6422006ACF1A /* FilmTableViewCell.swift */; };
+		287CE3A5270E6422006ACF1A /* FilmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287CE3A3270E6422006ACF1A /* FilmTableViewCell.xib */; };
+		287CE3A7270E6822006ACF1A /* FilmTVCell + Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CE3A6270E6822006ACF1A /* FilmTVCell + Configure.swift */; };
 		28D9458B270BBB9500E5CFAE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9458A270BBB9500E5CFAE /* Extensions.swift */; };
 		28D9458E270BBBC000E5CFAE /* DBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9458D270BBBC000E5CFAE /* DBConstants.swift */; };
 		28D94590270BBD3B00E5CFAE /* LoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9458F270BBD3B00E5CFAE /* LoadViewController.xib */; };
@@ -82,6 +88,12 @@
 		281D2741270BA655009CA26F /* TestVRGSoftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITests.swift; sourceTree = "<group>"; };
 		281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVRGSoftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		287CE395270DA347006ACF1A /* FilmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPresenter.swift; sourceTree = "<group>"; };
+		287CE397270E59A0006ACF1A /* FilmVC + ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmVC + ViewProtocol.swift"; sourceTree = "<group>"; };
+		287CE399270E5A36006ACF1A /* FilmVC + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmVC + TableView.swift"; sourceTree = "<group>"; };
+		287CE39B270E5C92006ACF1A /* FilmVC + Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmVC + Configure.swift"; sourceTree = "<group>"; };
+		287CE3A2270E6422006ACF1A /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		287CE3A3270E6422006ACF1A /* FilmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmTableViewCell.xib; sourceTree = "<group>"; };
+		287CE3A6270E6822006ACF1A /* FilmTVCell + Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmTVCell + Configure.swift"; sourceTree = "<group>"; };
 		28D9458A270BBB9500E5CFAE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		28D9458D270BBBC000E5CFAE /* DBConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBConstants.swift; sourceTree = "<group>"; };
 		28D9458F270BBD3B00E5CFAE /* LoadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadViewController.xib; sourceTree = "<group>"; };
@@ -185,7 +197,11 @@
 		281CC78D270BE09600891F5E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				287CE39D270E5E78006ACF1A /* Cell */,
 				281CC78F270BE0C500891F5E /* FilmViewController.swift */,
+				287CE39B270E5C92006ACF1A /* FilmVC + Configure.swift */,
+				287CE399270E5A36006ACF1A /* FilmVC + TableView.swift */,
+				287CE397270E59A0006ACF1A /* FilmVC + ViewProtocol.swift */,
 				281CC791270BE0D600891F5E /* FilmViewController.xib */,
 			);
 			path = View;
@@ -267,6 +283,16 @@
 				281D2743270BA655009CA26F /* TestVRGSoftUITestsLaunchTests.swift */,
 			);
 			path = TestVRGSoftUITests;
+			sourceTree = "<group>";
+		};
+		287CE39D270E5E78006ACF1A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				287CE3A2270E6422006ACF1A /* FilmTableViewCell.swift */,
+				287CE3A6270E6822006ACF1A /* FilmTVCell + Configure.swift */,
+				287CE3A3270E6422006ACF1A /* FilmTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		28D94585270BB9D900E5CFAE /* Application */ = {
@@ -445,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				281CC792270BE0D600891F5E /* FilmViewController.xib in Resources */,
+				287CE3A5270E6422006ACF1A /* FilmTableViewCell.xib in Resources */,
 				281D272D270BA655009CA26F /* LaunchScreen.storyboard in Resources */,
 				281D272A270BA655009CA26F /* Assets.xcassets in Resources */,
 				28D94590270BBD3B00E5CFAE /* LoadViewController.xib in Resources */,
@@ -576,6 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287CE3A4270E6422006ACF1A /* FilmTableViewCell.swift in Sources */,
 				28D9458B270BBB9500E5CFAE /* Extensions.swift in Sources */,
 				281D2722270BA654009CA26F /* LoadViewController.swift in Sources */,
 				281CC784270BC5B400891F5E /* LoadDataModel.swift in Sources */,
@@ -587,10 +615,14 @@
 				281D2728270BA654009CA26F /* TestVRGSoft.xcdatamodeld in Sources */,
 				281CC790270BE0C500891F5E /* FilmViewController.swift in Sources */,
 				281CC782270BC50A00891F5E /* LoadPresenter.swift in Sources */,
+				287CE3A7270E6822006ACF1A /* FilmTVCell + Configure.swift in Sources */,
 				281CC79A270C2E8D00891F5E /* NetworkService.swift in Sources */,
 				281CC794270BE30F00891F5E /* Router.swift in Sources */,
+				287CE39C270E5C92006ACF1A /* FilmVC + Configure.swift in Sources */,
+				287CE398270E59A0006ACF1A /* FilmVC + ViewProtocol.swift in Sources */,
 				281CC797270C273200891F5E /* FilmDataModel.swift in Sources */,
 				28D9458E270BBBC000E5CFAE /* DBConstants.swift in Sources */,
+				287CE39A270E5A36006ACF1A /* FilmVC + TableView.swift in Sources */,
 				281CC786270BC66E00891F5E /* LoadVC + ViewProtocol.swift in Sources */,
 				281CC78A270BC7F600891F5E /* AssemblyModuleBuilder.swift in Sources */,
 			);

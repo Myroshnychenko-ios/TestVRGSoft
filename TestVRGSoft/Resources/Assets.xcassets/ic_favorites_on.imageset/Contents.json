@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ic_watch_tv_disabled.png",
+      "filename" : "ic_favorites_on.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_watch_tv_disabled@2x.png",
+      "filename" : "ic_favorites_on@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_watch_tv_disabled@3x.png",
+      "filename" : "ic_favorites_on@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

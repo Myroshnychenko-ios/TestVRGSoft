@@ -7,18 +7,28 @@
 
 import Foundation
 import Alamofire
+import UIKit
 
 protocol NetworkServiceProtocol {
-    func requestFilms(completion: @escaping (Result<Results, Error>) -> Void)
+    
+    // MARK: - Network service protocol
+    
+    func requestFilms(completion: @escaping (Result<Films, Error>) -> Void)
+    func downloadImage(urlString: String, completion: @escaping (UIImage) -> Void)
+    
 }
 
 class NetworkService: NetworkServiceProtocol {
+    
+    // MARK: - Variables
     
     private var urlString = String()
     private var parameters = [String: String]()
     private var dateWith = String()
     private var dateOn = String()
     private var openingDates = String()
+    
+    // MARK: - Lifecycle
     
     init(dateWith: String?, dateOn: String?) {
         self.urlString = DBConstants.nYTimesURL
@@ -34,18 +44,32 @@ class NetworkService: NetworkServiceProtocol {
         parameters = ["opening-date": openingDates, "api-key": DBConstants.nYTimesKey]
     }
     
-    func requestFilms(completion: @escaping (Result<Results, Error>) -> Void) {
+    // MARK: - Protocol methods
+    
+    func requestFilms(completion: @escaping (Result<Films, Error>) -> Void) {
         guard let url = URL(string: urlString) else { return }
         AF.request(url, method: .get, parameters: self.parameters).responseJSON { (response) in
             guard let data = response.data else { return }
             do {
-                let results = try JSONDecoder().decode(Results.self, from: data)
-                completion(.success(results))
+                let films = try JSONDecoder().decode(Films.self, from: data)
+                print(films)
+                completion(.success(films))
             } catch {
                 completion(.failure(error))
             }
         }
     }
+    
+    func downloadImage(urlString: String, completion: @escaping (UIImage) -> Void) {
+        guard let url = URL(string: urlString) else { return }
+        AF.download(url).responseData(completionHandler: { (response) in
+            guard let data = response.value else { return }
+            guard let image = UIImage(data: data) else { return }
+            completion(image)
+        })
+    }
+    
+    // MARK: - Helpers
     
     private func configureDefaultsParameters() {
         let date = Date()

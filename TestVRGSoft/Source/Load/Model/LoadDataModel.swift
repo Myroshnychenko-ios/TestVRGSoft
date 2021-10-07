@@ -10,9 +10,7 @@ import Foundation
 // MARK: - Loading view controller data model
 
 struct LoadDataModel {
-    
     let logo: String
     let project: String
     let background: String
-    
 }

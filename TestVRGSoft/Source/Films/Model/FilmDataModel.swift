@@ -7,15 +7,17 @@
 
 import Foundation
 
-struct Results: Decodable {
-    var results: [Film]?
-    
+// MARK: - Network request film model
+
+struct Films: Decodable {
+    var films: [Film]?
     enum CodingKeys: String, CodingKey {
-        case results = "results"
+        case films = "results"
     }
 }
 
 struct Film: Decodable {
+    var isFavorites: Bool = false
     var displayTitle: String?
     var criticsPick: Int?
     var byline: String?
@@ -23,7 +25,6 @@ struct Film: Decodable {
     var summaryShort: String?
     var openingDate: String?
     var multimedia: Multimedia?
-    
     enum CodingKeys: String, CodingKey {
         case displayTitle = "display_title"
         case criticsPick = "critics_pick"
@@ -40,7 +41,6 @@ struct Multimedia: Decodable {
     var src: String?
     var height: Int?
     var width: Int?
-    
     enum CodingKeys: String, CodingKey {
         case type = "type"
         case src = "src"

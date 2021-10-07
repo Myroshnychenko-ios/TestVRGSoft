@@ -31,9 +31,11 @@ class LoadPresenter: LoadViewPresenterProtocol {
     
     // MARK: - Variables
     
-    let view: LoadViewProtocol
+    weak var view: LoadViewProtocol?
     let loadDataModel: LoadDataModel
     var router: RouterProtocol?
+    
+    // MARK: - Lifecycle
     
     required init(view: LoadViewProtocol, loadDataModel: LoadDataModel, router: RouterProtocol) {
         self.view = view
@@ -41,11 +43,13 @@ class LoadPresenter: LoadViewPresenterProtocol {
         self.router = router
     }
     
+    // MARK: - Protocol methods
+    
     func startSetup() {
         let logo = loadDataModel.logo
         let project = loadDataModel.project
         let background = loadDataModel.background
-        self.view.setupView(logo: logo, project: project, background: background)
+        self.view?.setupView(logo: logo, project: project, background: background)
     }
     
     func finishSetup() {

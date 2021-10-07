@@ -8,10 +8,8 @@
 import UIKit
 
 protocol AssemblyBuilderProtocol {
-    
     func createLoadModule(router: RouterProtocol) -> UIViewController
     func createFilmModule(router: RouterProtocol) -> UIViewController
-    
 }
 
 class AssemblyModuleBuilder: AssemblyBuilderProtocol {
@@ -26,6 +24,9 @@ class AssemblyModuleBuilder: AssemblyBuilderProtocol {
     
     func createFilmModule(router: RouterProtocol) -> UIViewController {
         let view = FilmViewController()
+        let networkService = NetworkService(dateWith: nil, dateOn: nil)
+        let preseter = FilmPresenter(view: view, networkService: networkService)
+        view.presenter = preseter
         return view
     }
     
