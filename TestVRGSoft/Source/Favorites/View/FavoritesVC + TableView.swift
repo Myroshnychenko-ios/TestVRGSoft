@@ -25,6 +25,10 @@ extension FavoritesViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.pushDetailsViewController(filmIndex: indexPath.row)
+    }
+    
 }
 
 extension FavoritesViewController: FavoritesTableViewCellProtocol {

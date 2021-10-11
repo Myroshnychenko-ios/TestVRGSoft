@@ -1,44 +1,45 @@
 //
-//  FilmPresenter.swift
+//  SearchPresenter.swift
 //  TestVRGSoft
 //
-//  Created by Максим Мирошниченко on 06.10.2021.
+//  Created by Максим Мирошниченко on 08.10.2021.
 //
 
 import Foundation
 
-protocol FilmViewProtocol: AnyObject {
+protocol SearchViewProtocol: AnyObject {
     
     // MARK: - View protocol
     
     func success()
     func failure(error: Error)
+    func clearTableView()
     
 }
 
-protocol FilmViewPresenterProtocol: AnyObject {
+protocol SearchViewPresenterProtocol: AnyObject {
     
     // MARK: - Presenter protocol
     
-    init(view: FilmViewProtocol, networkService: NetworkService, router: RouterProtocol)
-    func startRequestFilms()
+    init(view: SearchViewProtocol, networkService: NetworkService, router: RouterProtocol)
+    func startRequestFilms(search: String)
     func pushDetailsViewController(filmIndex: Int)
     var films: Films? { get set }
     
 }
 
-class FilmPresenter: FilmViewPresenterProtocol {
+class SearchPresenter: SearchViewPresenterProtocol {
     
     // MARK: - Variables
     
-    weak var view: FilmViewProtocol?
+    weak var view: SearchViewProtocol?
     let networkService: NetworkService!
     var router: RouterProtocol?
     var films: Films?
     
     // MARK: - Lifecycle
     
-    required init(view: FilmViewProtocol, networkService: NetworkService, router: RouterProtocol) {
+    required init(view: SearchViewProtocol, networkService: NetworkService, router: RouterProtocol) {
         self.view = view
         self.networkService = networkService
         self.router = router
@@ -46,19 +47,24 @@ class FilmPresenter: FilmViewPresenterProtocol {
     
     // MARK: - Protocol methods
     
-    func startRequestFilms() {
-        networkService.requestFilms(search: nil, completion: { [weak self] result in
-            guard self != nil else { return }
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let films):
-                    self?.films = films
-                    self?.view?.success()
-                case .failure(let error):
-                    self?.view?.failure(error: error)
+    func startRequestFilms(search: String) {
+        if search == "" {
+            films = nil
+            self.view?.clearTableView()
+        } else {
+            networkService.requestFilms(search: search, completion: { [weak self] result in
+                guard self != nil else { return }
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let films):
+                        self?.films = films
+                        self?.view?.success()
+                    case .failure(let error):
+                        self?.view?.failure(error: error)
+                    }
                 }
-            }
-        })
+            })
+        }
     }
     
     func pushDetailsViewController(filmIndex: Int) {

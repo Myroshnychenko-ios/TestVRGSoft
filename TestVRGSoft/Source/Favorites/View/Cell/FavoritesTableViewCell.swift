@@ -9,7 +9,6 @@ import UIKit
 
 class FavoritesTableViewCell: UITableViewCell {
     
-    
     // MARK: - Variables
     
     static let identifier = "FavoritesTableViewCell"

@@ -13,7 +13,7 @@ protocol NetworkServiceProtocol {
     
     // MARK: - Network service protocol
     
-    func requestFilms(completion: @escaping (Result<Films, Error>) -> Void)
+    func requestFilms(search: String?, completion: @escaping (Result<Films, Error>) -> Void)
     func downloadImage(urlString: String, completion: @escaping (UIImage) -> Void)
     
 }
@@ -46,7 +46,12 @@ class NetworkService: NetworkServiceProtocol {
     
     // MARK: - Protocol methods
     
-    func requestFilms(completion: @escaping (Result<Films, Error>) -> Void) {
+    func requestFilms(search: String?, completion: @escaping (Result<Films, Error>) -> Void) {
+        if search != nil {
+            configureSearchParameters(search: search ?? "")
+        } else {
+            configureDefaultsParameters()
+        }
         guard let url = URL(string: urlString) else { return }
         AF.request(url, method: .get, parameters: self.parameters).responseJSON { (response) in
             guard let data = response.data else { return }
@@ -79,6 +84,10 @@ class NetworkService: NetworkServiceProtocol {
         self.dateOn = dateFormatter.string(from: date)
         self.openingDates = "\(self.dateWith):\(self.dateOn)"
         parameters = ["opening-date": openingDates, "api-key": DBConstants.nYTimesKey]
+    }
+    
+    private func configureSearchParameters(search: String) {
+        parameters = ["query": search, "api-key": DBConstants.nYTimesKey]
     }
     
 }

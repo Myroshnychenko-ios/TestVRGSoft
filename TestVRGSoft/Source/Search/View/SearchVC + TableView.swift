@@ -1,5 +1,5 @@
 //
-//  FilmVC + TableView.swift
+//  SearchVC + TableView.swift
 //  TestVRGSoft
 //
 //  Created by Максим Мирошниченко on 07.10.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension FilmViewController: UITableViewDataSource, UITableViewDelegate {
+extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - TableView Delegate/DataSource
     
@@ -16,7 +16,7 @@ extension FilmViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: FilmTableViewCell.identifier, for: indexPath) as! FilmTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.identifier, for: indexPath) as! SearchTableViewCell
         cell.delegate = self
         let film = presenter.films?.films?[indexPath.row]
         let networkService = NetworkService(dateWith: nil, dateOn: nil)
@@ -31,7 +31,7 @@ extension FilmViewController: UITableViewDataSource, UITableViewDelegate {
     
 }
 
-extension FilmViewController: FilmTableViewCellProtocol {
+extension SearchViewController: SearchTableViewCellProtocol {
     
     func updateTableView() {
         tableView.reloadData()

@@ -11,6 +11,8 @@ protocol AssemblyBuilderProtocol {
     func createLoadModule(router: RouterProtocol) -> UIViewController
     func createFilmModule(router: RouterProtocol) -> UIViewController
     func createFavoritesModule(router: RouterProtocol) -> UIViewController
+    func createSearchModule(router: RouterProtocol) -> UIViewController
+    func createDetailsModule(router: RouterProtocol, detailsFilm: DetailsFilm) -> UIViewController
 }
 
 class AssemblyModuleBuilder: AssemblyBuilderProtocol {
@@ -26,7 +28,7 @@ class AssemblyModuleBuilder: AssemblyBuilderProtocol {
     func createFilmModule(router: RouterProtocol) -> UIViewController {
         let view = FilmViewController()
         let networkService = NetworkService(dateWith: nil, dateOn: nil)
-        let preseter = FilmPresenter(view: view, networkService: networkService)
+        let preseter = FilmPresenter(view: view, networkService: networkService, router: router)
         view.presenter = preseter
         return view
     }
@@ -34,7 +36,24 @@ class AssemblyModuleBuilder: AssemblyBuilderProtocol {
     func createFavoritesModule(router: RouterProtocol) -> UIViewController {
         let view = FavoritesViewController()
         let coreDataService = CoreDataService()
-        let presenter = FavoritesPresenter(view: view, coreDataService: coreDataService)
+        let presenter = FavoritesPresenter(view: view, coreDataService: coreDataService, router: router)
+        view.presenter = presenter
+        return view
+    }
+    
+    func createSearchModule(router: RouterProtocol) -> UIViewController {
+        let view = SearchViewController()
+        let networkService = NetworkService(dateWith: nil, dateOn: nil)
+        let presenter = SearchPresenter(view: view, networkService: networkService, router: router)
+        view.presenter = presenter
+        return view
+    }
+    
+    func createDetailsModule(router: RouterProtocol, detailsFilm: DetailsFilm) -> UIViewController {
+        let view = DetailsViewController()
+        let networkService = NetworkService(dateWith: nil, dateOn: nil)
+        let coreDataService = CoreDataService()
+        let presenter = DetailsPresenter(view: view, networkService: networkService, coreDataService: coreDataService, detailsFilm: detailsFilm)
         view.presenter = presenter
         return view
     }

@@ -1,5 +1,5 @@
 //
-//  FilmTableViewCell.swift
+//  SearchTableViewCell.swift
 //  TestVRGSoft
 //
 //  Created by Максим Мирошниченко on 07.10.2021.
@@ -7,15 +7,15 @@
 
 import UIKit
 
-class FilmTableViewCell: UITableViewCell {
+class SearchTableViewCell: UITableViewCell {
     
     // MARK: - Variables
     
-    static let identifier = "FilmTableViewCell"
+    static let identifier = "SearchTableViewCell"
     var film: Film?
     weak var networkService: NetworkService!
     var coreDataService: CoreDataService!
-    var delegate: FilmTableViewCellProtocol?
+    var delegate: SearchTableViewCellProtocol?
     
     // MARK: - IBOutlets
     
@@ -23,12 +23,12 @@ class FilmTableViewCell: UITableViewCell {
     @IBOutlet weak var multimediaImageView: UIImageView!
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     @IBOutlet weak var switchButton: UIButton!
-    
+
     // MARK: - Lifecycle
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        configureFilmTableViewVell()
+        configureSearchTableViewVell()
         self.indicatorView.startAnimating()
     }
     
